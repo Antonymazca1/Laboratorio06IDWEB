@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscripción a cursos</title>
+</head>
+<body>
+<header>
+    <h1>Inscripcion a cursos</h1>  
+<nav>
+  <ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="registro.html">Boletín</a></li>
+    <li><a href="lenguajes.html">Lenguajes</a></li>
+    <li><a href="validacion.html">Validación</a></li>
+    <li><a href="cursos.html">Cursos</a></li>  </ul>
+</nav>
+</header>
+<main>
+  <form action="#" method="post">
+        <label for="c-nombre">Nombre</label>
+        <input id="c-nombre" name="nombre" type="text" required placeholder="Nombre">
+  
+        <label for="c-apellido">Apellido</label>
+        <input id="c-apellido" name="apellido" type="text" required placeholder="Apellido">
+   
+        <label for="c-dni">Documento de identidad</label>
+        <input id="c-dni" name="dni" type="text" required placeholder="DNI / ID">
+   
+        <label for="c-email">Correo electrónico</label>
+        <input id="c-email" name="email" type="email" required placeholder="usuario@dominio.com">
+ 
+      <label for="c-curso">Seleccion de curso</label>
+      <select id="c-curso" name="curso" required>
+        <option value="" selected disabled>Elige un curso…</option>
+        <option value="frontend">Desarrollo Frontend</option>
+        <option value="backend">Desarrollo Backend</option>
+        <option value="datos">Ciencia de Datos</option>
+      </select>
+    <fieldset>
+      <legend>Modalidad (elige una)</legend>
+      <label><input type="radio" name="modalidad" value="presencial" required> Presencial</label>
+      <label><input type="radio" name="modalidad" value="virtual"> Virtual</label>
+    </fieldset>
+    <fieldset>
+      <legend>Horarios disponibles</legend>
+      <label><input type="checkbox" name="horarios" value="mañana"> Mañana</label>
+      <label><input type="checkbox" name="horarios" value="tarde"> Tarde</label>
+      <label><input type="checkbox" name="horarios" value="noche"> Noche</label>
+    </fieldset>
+      <label for="c-coment">Comentarios adicionales</label>
+      <textarea id="c-coment" name="comentarios" rows="4" placeholder="¿Algo que debamos saber?"></textarea>
+      <button type="submit">Enviar</button>
+      <button type="reset">Restablecer</button>
+  </form>
+</div>
+</main>
+<footer>
+  <p>Antony Masca 2025</p>
+</footer>
+</body>
+</html>
